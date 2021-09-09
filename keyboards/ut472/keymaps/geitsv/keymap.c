@@ -4,15 +4,15 @@
  
  ROCKET == SEND_STRING("=>")
  
- UNDO_Mac == SEND_STRING(SS_RGUI(z))
- CUT_Mac == SEND_STRING(SS_RGUI(x))
- COPY_Mac == SEND_STRING(SS_RGUI(c))
- PASTE_Mac == SEND_STRING(SS_RGUI(v))
+ UNDO_Mac == SEND_STRING(SS_RGUI("z"))
+ CUT_Mac == SEND_STRING(SS_RGUI("x"))
+ COPY_Mac == SEND_STRING(SS_RGUI("c"))
+ PASTE_Mac == SEND_STRING(SS_RGUI("v"))
 
- UNDO_Linux == SEND_STRING(SS_RCTL(z))
- CUT_Linux == SEND_STRING(SS_RCTL(x))
- COPY_Linux == SEND_STRING(SS_RCTL(c))
- PASTE_Linux == SEND_STRING(SS_RCTL(v))
+ UNDO_Win == SEND_STRING(SS_RCTL("z"))
+ CUT_Win == SEND_STRING(SS_RCTL("x"))
+ COPY_Win == SEND_STRING(SS_RCTL("c"))
+ PASTE_Win == SEND_STRING(SS_RCTL("v"))
  */
 
 enum custom_keycodes {
@@ -37,7 +37,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case UNDO_Mac:
         if (record->event.pressed) {
             // when keycode UNDO_Mac is pressed
-            SEND_STRING(SS_RGUI(z));
+            SEND_STRING(SS_RGUI("z"));
         } else {
             // when keycode UNDO_Mac is released
         }
@@ -45,21 +45,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case CUT_Mac:
         if (record->event.pressed) {
-            SEND_STRING(SS_RGUI(x));
+            SEND_STRING(SS_RGUI("x"));
         } else {
         }
         break;
 
     case COPY_Mac:
         if (record->event.pressed) {
-            SEND_STRING(SS_RGUI(c));
+            SEND_STRING(SS_RGUI("c"));
         } else {
         }
         break;
 
     case PASTE_Mac:
         if (record->event.pressed) {
-            SEND_STRING(SS_RGUI(v));
+            SEND_STRING(SS_RGUI("v"));
         } else {
         }
         break;

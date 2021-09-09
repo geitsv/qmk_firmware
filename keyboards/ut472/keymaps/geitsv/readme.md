@@ -1,6 +1,6 @@
 # Geits's UT47.2 layout
  
- Designed to make chording with modifiers a bit easier by using one-shot and tap-hold mods. Custom Mods were also designed to increase the keyboard's compatability between basic MacOS and GNULinux shortcuts (Copy, Cut, Paste, etc.). I hope to include a few more tap dance additions in the future...and better keymap images.
+ Designed to make chording with modifiers a bit easier by using one-shot and tap-hold mods. Custom Mods were also designed to increase the keyboard's compatability between basic MacOS and Windows shortcuts (Copy, Cut, Paste, etc.). I hope to include a few more tap dance additions in the future...and better keymap images.
 
 
 
